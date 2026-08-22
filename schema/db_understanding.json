@@ -1,0 +1,93 @@
+{
+    "business_type": "Music Store",
+    "business_description": "Short 2 sentence description.",
+    "tables": {
+        "Album": {
+            "purpose": "Stores music albums",
+            "important_columns": [
+                "AlbumId",
+                "Title"
+            ]
+        },
+        "Artist": {
+            "purpose": "Stores information about artists",
+            "important_columns": [
+                "ArtistId",
+                "Name"
+            ]
+        },
+        "Customer": {
+            "purpose": "Stores customer information",
+            "important_columns": [
+                "CustomerId",
+                "Name"
+            ]
+        },
+        "Employee": {
+            "purpose": "Stores employee information",
+            "important_columns": [
+                "EmployeeId",
+                "Name"
+            ]
+        },
+        "Genre": {
+            "purpose": "Stores music genres",
+            "important_columns": [
+                "GenreId",
+                "Name"
+            ]
+        },
+        "Invoice": {
+            "purpose": "Stores invoice information",
+            "important_columns": [
+                "InvoiceId",
+                "Date"
+            ]
+        },
+        "InvoiceLine": {
+            "purpose": "Stores line items for invoices",
+            "important_columns": [
+                "InvoiceLineId",
+                "InvoiceId",
+                "TrackId"
+            ]
+        },
+        "MediaType": {
+            "purpose": "Stores media types",
+            "important_columns": [
+                "MediaTypeId",
+                "Name"
+            ]
+        },
+        "Playlist": {
+            "purpose": "Stores playlist information",
+            "important_columns": [
+                "PlaylistId",
+                "Name"
+            ]
+        },
+        "PlaylistTrack": {
+            "purpose": "Stores tracks in playlists",
+            "important_columns": [
+                "PlaylistTrackId",
+                "PlaylistId",
+                "TrackId"
+            ]
+        },
+        "Track": {
+            "purpose": "Stores track information",
+            "important_columns": [
+                "TrackId",
+                "Title"
+            ]
+        }
+    },
+    "relationships": "Each table is related to others through foreign keys, creating a network of interconnected data.",
+    "potential_insights": [
+        "Insight into customer purchasing behavior based on invoice and customer data.",
+        "Artist popularity trends based on album sales and genre information.",
+        "Employee performance metrics tied to sales and customer satisfaction.",
+        "Genre distribution across albums and tracks.",
+        "Playlist creation patterns and track selection algorithms."
+    ]
+}

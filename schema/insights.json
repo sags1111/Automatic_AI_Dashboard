@@ -1,0 +1,282 @@
+{
+    "business_type": "Music Store",
+    "business_description": "Short 2 sentence description.",
+    "tables": {
+        "Album": {
+            "total_rows": 347,
+            "columns": [
+                "AlbumId",
+                "Title",
+                "ArtistId"
+            ],
+            "numeric_stats": {
+                "AlbumId": {
+                    "min": 1.0,
+                    "max": 347.0,
+                    "avg": 174.0
+                },
+                "ArtistId": {
+                    "min": 1.0,
+                    "max": 275.0,
+                    "avg": 121.94
+                }
+            }
+        },
+        "Artist": {
+            "total_rows": 275,
+            "columns": [
+                "ArtistId",
+                "Name"
+            ],
+            "numeric_stats": {
+                "ArtistId": {
+                    "min": 1.0,
+                    "max": 275.0,
+                    "avg": 138.0
+                }
+            }
+        },
+        "Customer": {
+            "total_rows": 59,
+            "columns": [
+                "CustomerId",
+                "FirstName",
+                "LastName",
+                "Company",
+                "Address",
+                "City",
+                "State",
+                "Country",
+                "PostalCode",
+                "Phone",
+                "Fax",
+                "Email",
+                "SupportRepId"
+            ],
+            "numeric_stats": {
+                "CustomerId": {
+                    "min": 1.0,
+                    "max": 59.0,
+                    "avg": 30.0
+                },
+                "SupportRepId": {
+                    "min": 3.0,
+                    "max": 5.0,
+                    "avg": 3.95
+                }
+            }
+        },
+        "Employee": {
+            "total_rows": 8,
+            "columns": [
+                "EmployeeId",
+                "LastName",
+                "FirstName",
+                "Title",
+                "ReportsTo",
+                "BirthDate",
+                "HireDate",
+                "Address",
+                "City",
+                "State",
+                "Country",
+                "PostalCode",
+                "Phone",
+                "Fax",
+                "Email"
+            ],
+            "numeric_stats": {
+                "EmployeeId": {
+                    "min": 1.0,
+                    "max": 8.0,
+                    "avg": 4.5
+                },
+                "ReportsTo": {
+                    "min": 1.0,
+                    "max": 6.0,
+                    "avg": 2.86
+                }
+            }
+        },
+        "Genre": {
+            "total_rows": 25,
+            "columns": [
+                "GenreId",
+                "Name"
+            ],
+            "numeric_stats": {
+                "GenreId": {
+                    "min": 1.0,
+                    "max": 25.0,
+                    "avg": 13.0
+                }
+            }
+        },
+        "Invoice": {
+            "total_rows": 412,
+            "columns": [
+                "InvoiceId",
+                "CustomerId",
+                "InvoiceDate",
+                "BillingAddress",
+                "BillingCity",
+                "BillingState",
+                "BillingCountry",
+                "BillingPostalCode",
+                "Total"
+            ],
+            "numeric_stats": {
+                "InvoiceId": {
+                    "min": 1.0,
+                    "max": 412.0,
+                    "avg": 206.5
+                },
+                "CustomerId": {
+                    "min": 1.0,
+                    "max": 59.0,
+                    "avg": 29.93
+                },
+                "Total": {
+                    "min": 0.99,
+                    "max": 25.86,
+                    "avg": 5.65
+                }
+            }
+        },
+        "InvoiceLine": {
+            "total_rows": 2240,
+            "columns": [
+                "InvoiceLineId",
+                "InvoiceId",
+                "TrackId",
+                "UnitPrice",
+                "Quantity"
+            ],
+            "numeric_stats": {
+                "InvoiceLineId": {
+                    "min": 1.0,
+                    "max": 2240.0,
+                    "avg": 1120.5
+                },
+                "InvoiceId": {
+                    "min": 1.0,
+                    "max": 412.0,
+                    "avg": 206.87
+                },
+                "TrackId": {
+                    "min": 1.0,
+                    "max": 3500.0,
+                    "avg": 1717.73
+                },
+                "UnitPrice": {
+                    "min": 0.99,
+                    "max": 1.99,
+                    "avg": 1.04
+                },
+                "Quantity": {
+                    "min": 1.0,
+                    "max": 1.0,
+                    "avg": 1.0
+                }
+            }
+        },
+        "MediaType": {
+            "total_rows": 5,
+            "columns": [
+                "MediaTypeId",
+                "Name"
+            ],
+            "numeric_stats": {
+                "MediaTypeId": {
+                    "min": 1.0,
+                    "max": 5.0,
+                    "avg": 3.0
+                }
+            }
+        },
+        "Playlist": {
+            "total_rows": 18,
+            "columns": [
+                "PlaylistId",
+                "Name"
+            ],
+            "numeric_stats": {
+                "PlaylistId": {
+                    "min": 1.0,
+                    "max": 18.0,
+                    "avg": 9.5
+                }
+            }
+        },
+        "PlaylistTrack": {
+            "total_rows": 8715,
+            "columns": [
+                "PlaylistId",
+                "TrackId"
+            ],
+            "numeric_stats": {
+                "PlaylistId": {
+                    "min": 1.0,
+                    "max": 18.0,
+                    "avg": 4.92
+                },
+                "TrackId": {
+                    "min": 1.0,
+                    "max": 3503.0,
+                    "avg": 1767.08
+                }
+            }
+        },
+        "Track": {
+            "total_rows": 3503,
+            "columns": [
+                "TrackId",
+                "Name",
+                "AlbumId",
+                "MediaTypeId",
+                "GenreId",
+                "Composer",
+                "Milliseconds",
+                "Bytes",
+                "UnitPrice"
+            ],
+            "numeric_stats": {
+                "TrackId": {
+                    "min": 1.0,
+                    "max": 3503.0,
+                    "avg": 1752.0
+                },
+                "AlbumId": {
+                    "min": 1.0,
+                    "max": 347.0,
+                    "avg": 140.93
+                },
+                "MediaTypeId": {
+                    "min": 1.0,
+                    "max": 5.0,
+                    "avg": 1.21
+                },
+                "GenreId": {
+                    "min": 1.0,
+                    "max": 25.0,
+                    "avg": 5.73
+                },
+                "Milliseconds": {
+                    "min": 1071.0,
+                    "max": 5286953.0,
+                    "avg": 393599.21
+                },
+                "Bytes": {
+                    "min": 38747.0,
+                    "max": 1059546140.0,
+                    "avg": 33510207.07
+                },
+                "UnitPrice": {
+                    "min": 0.99,
+                    "max": 1.99,
+                    "avg": 1.05
+                }
+            }
+        }
+    }
+}

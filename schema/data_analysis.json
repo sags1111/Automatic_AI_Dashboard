@@ -1,0 +1,765 @@
+{
+    "Album": {
+        "total_rows": 347,
+        "total_columns": 3,
+        "columns": [
+            "AlbumId",
+            "Title",
+            "ArtistId"
+        ],
+        "missing_values": {},
+        "numeric_stats": {
+            "AlbumId": {
+                "min": 1.0,
+                "max": 347.0,
+                "avg": 174.0
+            },
+            "ArtistId": {
+                "min": 1.0,
+                "max": 275.0,
+                "avg": 121.94
+            }
+        },
+        "sample_data": [
+            {
+                "AlbumId": 1,
+                "Title": "For Those About To Rock We Salute You",
+                "ArtistId": 1
+            },
+            {
+                "AlbumId": 2,
+                "Title": "Balls to the Wall",
+                "ArtistId": 2
+            },
+            {
+                "AlbumId": 3,
+                "Title": "Restless and Wild",
+                "ArtistId": 2
+            },
+            {
+                "AlbumId": 4,
+                "Title": "Let There Be Rock",
+                "ArtistId": 1
+            },
+            {
+                "AlbumId": 5,
+                "Title": "Big Ones",
+                "ArtistId": 3
+            }
+        ]
+    },
+    "Artist": {
+        "total_rows": 275,
+        "total_columns": 2,
+        "columns": [
+            "ArtistId",
+            "Name"
+        ],
+        "missing_values": {},
+        "numeric_stats": {
+            "ArtistId": {
+                "min": 1.0,
+                "max": 275.0,
+                "avg": 138.0
+            }
+        },
+        "sample_data": [
+            {
+                "ArtistId": 1,
+                "Name": "AC/DC"
+            },
+            {
+                "ArtistId": 2,
+                "Name": "Accept"
+            },
+            {
+                "ArtistId": 3,
+                "Name": "Aerosmith"
+            },
+            {
+                "ArtistId": 4,
+                "Name": "Alanis Morissette"
+            },
+            {
+                "ArtistId": 5,
+                "Name": "Alice In Chains"
+            }
+        ]
+    },
+    "Customer": {
+        "total_rows": 59,
+        "total_columns": 13,
+        "columns": [
+            "CustomerId",
+            "FirstName",
+            "LastName",
+            "Company",
+            "Address",
+            "City",
+            "State",
+            "Country",
+            "PostalCode",
+            "Phone",
+            "Fax",
+            "Email",
+            "SupportRepId"
+        ],
+        "missing_values": {
+            "Company": 49,
+            "State": 29,
+            "PostalCode": 4,
+            "Phone": 1,
+            "Fax": 47
+        },
+        "numeric_stats": {
+            "CustomerId": {
+                "min": 1.0,
+                "max": 59.0,
+                "avg": 30.0
+            },
+            "SupportRepId": {
+                "min": 3.0,
+                "max": 5.0,
+                "avg": 3.95
+            }
+        },
+        "sample_data": [
+            {
+                "CustomerId": 1,
+                "FirstName": "Lu\u00eds",
+                "LastName": "Gon\u00e7alves",
+                "Company": "Embraer - Empresa Brasileira de Aeron\u00e1utica S.A.",
+                "Address": "Av. Brigadeiro Faria Lima, 2170",
+                "City": "S\u00e3o Jos\u00e9 dos Campos",
+                "State": "SP",
+                "Country": "Brazil",
+                "PostalCode": "12227-000",
+                "Phone": "+55 (12) 3923-5555",
+                "Fax": "+55 (12) 3923-5566",
+                "Email": "luisg@embraer.com.br",
+                "SupportRepId": 3
+            },
+            {
+                "CustomerId": 2,
+                "FirstName": "Leonie",
+                "LastName": "K\u00f6hler",
+                "Company": NaN,
+                "Address": "Theodor-Heuss-Stra\u00dfe 34",
+                "City": "Stuttgart",
+                "State": NaN,
+                "Country": "Germany",
+                "PostalCode": "70174",
+                "Phone": "+49 0711 2842222",
+                "Fax": NaN,
+                "Email": "leonekohler@surfeu.de",
+                "SupportRepId": 5
+            },
+            {
+                "CustomerId": 3,
+                "FirstName": "Fran\u00e7ois",
+                "LastName": "Tremblay",
+                "Company": NaN,
+                "Address": "1498 rue B\u00e9langer",
+                "City": "Montr\u00e9al",
+                "State": "QC",
+                "Country": "Canada",
+                "PostalCode": "H2G 1A7",
+                "Phone": "+1 (514) 721-4711",
+                "Fax": NaN,
+                "Email": "ftremblay@gmail.com",
+                "SupportRepId": 3
+            },
+            {
+                "CustomerId": 4,
+                "FirstName": "Bj\u00f8rn",
+                "LastName": "Hansen",
+                "Company": NaN,
+                "Address": "Ullev\u00e5lsveien 14",
+                "City": "Oslo",
+                "State": NaN,
+                "Country": "Norway",
+                "PostalCode": "0171",
+                "Phone": "+47 22 44 22 22",
+                "Fax": NaN,
+                "Email": "bjorn.hansen@yahoo.no",
+                "SupportRepId": 4
+            },
+            {
+                "CustomerId": 5,
+                "FirstName": "Franti\u0161ek",
+                "LastName": "Wichterlov\u00e1",
+                "Company": "JetBrains s.r.o.",
+                "Address": "Klanova 9/506",
+                "City": "Prague",
+                "State": NaN,
+                "Country": "Czech Republic",
+                "PostalCode": "14700",
+                "Phone": "+420 2 4172 5555",
+                "Fax": "+420 2 4172 5555",
+                "Email": "frantisekw@jetbrains.com",
+                "SupportRepId": 4
+            }
+        ]
+    },
+    "Employee": {
+        "total_rows": 8,
+        "total_columns": 15,
+        "columns": [
+            "EmployeeId",
+            "LastName",
+            "FirstName",
+            "Title",
+            "ReportsTo",
+            "BirthDate",
+            "HireDate",
+            "Address",
+            "City",
+            "State",
+            "Country",
+            "PostalCode",
+            "Phone",
+            "Fax",
+            "Email"
+        ],
+        "missing_values": {
+            "ReportsTo": 1
+        },
+        "numeric_stats": {
+            "EmployeeId": {
+                "min": 1.0,
+                "max": 8.0,
+                "avg": 4.5
+            },
+            "ReportsTo": {
+                "min": 1.0,
+                "max": 6.0,
+                "avg": 2.86
+            }
+        },
+        "sample_data": [
+            {
+                "EmployeeId": 1,
+                "LastName": "Adams",
+                "FirstName": "Andrew",
+                "Title": "General Manager",
+                "ReportsTo": NaN,
+                "BirthDate": "1962-02-18 00:00:00",
+                "HireDate": "2002-08-14 00:00:00",
+                "Address": "11120 Jasper Ave NW",
+                "City": "Edmonton",
+                "State": "AB",
+                "Country": "Canada",
+                "PostalCode": "T5K 2N1",
+                "Phone": "+1 (780) 428-9482",
+                "Fax": "+1 (780) 428-3457",
+                "Email": "andrew@chinookcorp.com"
+            },
+            {
+                "EmployeeId": 2,
+                "LastName": "Edwards",
+                "FirstName": "Nancy",
+                "Title": "Sales Manager",
+                "ReportsTo": 1.0,
+                "BirthDate": "1958-12-08 00:00:00",
+                "HireDate": "2002-05-01 00:00:00",
+                "Address": "825 8 Ave SW",
+                "City": "Calgary",
+                "State": "AB",
+                "Country": "Canada",
+                "PostalCode": "T2P 2T3",
+                "Phone": "+1 (403) 262-3443",
+                "Fax": "+1 (403) 262-3322",
+                "Email": "nancy@chinookcorp.com"
+            },
+            {
+                "EmployeeId": 3,
+                "LastName": "Peacock",
+                "FirstName": "Jane",
+                "Title": "Sales Support Agent",
+                "ReportsTo": 2.0,
+                "BirthDate": "1973-08-29 00:00:00",
+                "HireDate": "2002-04-01 00:00:00",
+                "Address": "1111 6 Ave SW",
+                "City": "Calgary",
+                "State": "AB",
+                "Country": "Canada",
+                "PostalCode": "T2P 5M5",
+                "Phone": "+1 (403) 262-3443",
+                "Fax": "+1 (403) 262-6712",
+                "Email": "jane@chinookcorp.com"
+            },
+            {
+                "EmployeeId": 4,
+                "LastName": "Park",
+                "FirstName": "Margaret",
+                "Title": "Sales Support Agent",
+                "ReportsTo": 2.0,
+                "BirthDate": "1947-09-19 00:00:00",
+                "HireDate": "2003-05-03 00:00:00",
+                "Address": "683 10 Street SW",
+                "City": "Calgary",
+                "State": "AB",
+                "Country": "Canada",
+                "PostalCode": "T2P 5G3",
+                "Phone": "+1 (403) 263-4423",
+                "Fax": "+1 (403) 263-4289",
+                "Email": "margaret@chinookcorp.com"
+            },
+            {
+                "EmployeeId": 5,
+                "LastName": "Johnson",
+                "FirstName": "Steve",
+                "Title": "Sales Support Agent",
+                "ReportsTo": 2.0,
+                "BirthDate": "1965-03-03 00:00:00",
+                "HireDate": "2003-10-17 00:00:00",
+                "Address": "7727B 41 Ave",
+                "City": "Calgary",
+                "State": "AB",
+                "Country": "Canada",
+                "PostalCode": "T3B 1Y7",
+                "Phone": "1 (780) 836-9987",
+                "Fax": "1 (780) 836-9543",
+                "Email": "steve@chinookcorp.com"
+            }
+        ]
+    },
+    "Genre": {
+        "total_rows": 25,
+        "total_columns": 2,
+        "columns": [
+            "GenreId",
+            "Name"
+        ],
+        "missing_values": {},
+        "numeric_stats": {
+            "GenreId": {
+                "min": 1.0,
+                "max": 25.0,
+                "avg": 13.0
+            }
+        },
+        "sample_data": [
+            {
+                "GenreId": 1,
+                "Name": "Rock"
+            },
+            {
+                "GenreId": 2,
+                "Name": "Jazz"
+            },
+            {
+                "GenreId": 3,
+                "Name": "Metal"
+            },
+            {
+                "GenreId": 4,
+                "Name": "Alternative & Punk"
+            },
+            {
+                "GenreId": 5,
+                "Name": "Rock And Roll"
+            }
+        ]
+    },
+    "Invoice": {
+        "total_rows": 412,
+        "total_columns": 9,
+        "columns": [
+            "InvoiceId",
+            "CustomerId",
+            "InvoiceDate",
+            "BillingAddress",
+            "BillingCity",
+            "BillingState",
+            "BillingCountry",
+            "BillingPostalCode",
+            "Total"
+        ],
+        "missing_values": {
+            "BillingState": 202,
+            "BillingPostalCode": 28
+        },
+        "numeric_stats": {
+            "InvoiceId": {
+                "min": 1.0,
+                "max": 412.0,
+                "avg": 206.5
+            },
+            "CustomerId": {
+                "min": 1.0,
+                "max": 59.0,
+                "avg": 29.93
+            },
+            "Total": {
+                "min": 0.99,
+                "max": 25.86,
+                "avg": 5.65
+            }
+        },
+        "sample_data": [
+            {
+                "InvoiceId": 1,
+                "CustomerId": 2,
+                "InvoiceDate": "2021-01-01 00:00:00",
+                "BillingAddress": "Theodor-Heuss-Stra\u00dfe 34",
+                "BillingCity": "Stuttgart",
+                "BillingState": NaN,
+                "BillingCountry": "Germany",
+                "BillingPostalCode": "70174",
+                "Total": 1.98
+            },
+            {
+                "InvoiceId": 2,
+                "CustomerId": 4,
+                "InvoiceDate": "2021-01-02 00:00:00",
+                "BillingAddress": "Ullev\u00e5lsveien 14",
+                "BillingCity": "Oslo",
+                "BillingState": NaN,
+                "BillingCountry": "Norway",
+                "BillingPostalCode": "0171",
+                "Total": 3.96
+            },
+            {
+                "InvoiceId": 3,
+                "CustomerId": 8,
+                "InvoiceDate": "2021-01-03 00:00:00",
+                "BillingAddress": "Gr\u00e9trystraat 63",
+                "BillingCity": "Brussels",
+                "BillingState": NaN,
+                "BillingCountry": "Belgium",
+                "BillingPostalCode": "1000",
+                "Total": 5.94
+            },
+            {
+                "InvoiceId": 4,
+                "CustomerId": 14,
+                "InvoiceDate": "2021-01-06 00:00:00",
+                "BillingAddress": "8210 111 ST NW",
+                "BillingCity": "Edmonton",
+                "BillingState": "AB",
+                "BillingCountry": "Canada",
+                "BillingPostalCode": "T6G 2C7",
+                "Total": 8.91
+            },
+            {
+                "InvoiceId": 5,
+                "CustomerId": 23,
+                "InvoiceDate": "2021-01-11 00:00:00",
+                "BillingAddress": "69 Salem Street",
+                "BillingCity": "Boston",
+                "BillingState": "MA",
+                "BillingCountry": "USA",
+                "BillingPostalCode": "2113",
+                "Total": 13.86
+            }
+        ]
+    },
+    "InvoiceLine": {
+        "total_rows": 2240,
+        "total_columns": 5,
+        "columns": [
+            "InvoiceLineId",
+            "InvoiceId",
+            "TrackId",
+            "UnitPrice",
+            "Quantity"
+        ],
+        "missing_values": {},
+        "numeric_stats": {
+            "InvoiceLineId": {
+                "min": 1.0,
+                "max": 2240.0,
+                "avg": 1120.5
+            },
+            "InvoiceId": {
+                "min": 1.0,
+                "max": 412.0,
+                "avg": 206.87
+            },
+            "TrackId": {
+                "min": 1.0,
+                "max": 3500.0,
+                "avg": 1717.73
+            },
+            "UnitPrice": {
+                "min": 0.99,
+                "max": 1.99,
+                "avg": 1.04
+            },
+            "Quantity": {
+                "min": 1.0,
+                "max": 1.0,
+                "avg": 1.0
+            }
+        },
+        "sample_data": [
+            {
+                "InvoiceLineId": 1,
+                "InvoiceId": 1,
+                "TrackId": 2,
+                "UnitPrice": 0.99,
+                "Quantity": 1
+            },
+            {
+                "InvoiceLineId": 2,
+                "InvoiceId": 1,
+                "TrackId": 4,
+                "UnitPrice": 0.99,
+                "Quantity": 1
+            },
+            {
+                "InvoiceLineId": 3,
+                "InvoiceId": 2,
+                "TrackId": 6,
+                "UnitPrice": 0.99,
+                "Quantity": 1
+            },
+            {
+                "InvoiceLineId": 4,
+                "InvoiceId": 2,
+                "TrackId": 8,
+                "UnitPrice": 0.99,
+                "Quantity": 1
+            },
+            {
+                "InvoiceLineId": 5,
+                "InvoiceId": 2,
+                "TrackId": 10,
+                "UnitPrice": 0.99,
+                "Quantity": 1
+            }
+        ]
+    },
+    "MediaType": {
+        "total_rows": 5,
+        "total_columns": 2,
+        "columns": [
+            "MediaTypeId",
+            "Name"
+        ],
+        "missing_values": {},
+        "numeric_stats": {
+            "MediaTypeId": {
+                "min": 1.0,
+                "max": 5.0,
+                "avg": 3.0
+            }
+        },
+        "sample_data": [
+            {
+                "MediaTypeId": 1,
+                "Name": "MPEG audio file"
+            },
+            {
+                "MediaTypeId": 2,
+                "Name": "Protected AAC audio file"
+            },
+            {
+                "MediaTypeId": 3,
+                "Name": "Protected MPEG-4 video file"
+            },
+            {
+                "MediaTypeId": 4,
+                "Name": "Purchased AAC audio file"
+            },
+            {
+                "MediaTypeId": 5,
+                "Name": "AAC audio file"
+            }
+        ]
+    },
+    "Playlist": {
+        "total_rows": 18,
+        "total_columns": 2,
+        "columns": [
+            "PlaylistId",
+            "Name"
+        ],
+        "missing_values": {},
+        "numeric_stats": {
+            "PlaylistId": {
+                "min": 1.0,
+                "max": 18.0,
+                "avg": 9.5
+            }
+        },
+        "sample_data": [
+            {
+                "PlaylistId": 1,
+                "Name": "Music"
+            },
+            {
+                "PlaylistId": 2,
+                "Name": "Movies"
+            },
+            {
+                "PlaylistId": 3,
+                "Name": "TV Shows"
+            },
+            {
+                "PlaylistId": 4,
+                "Name": "Audiobooks"
+            },
+            {
+                "PlaylistId": 5,
+                "Name": "90\u2019s Music"
+            }
+        ]
+    },
+    "PlaylistTrack": {
+        "total_rows": 8715,
+        "total_columns": 2,
+        "columns": [
+            "PlaylistId",
+            "TrackId"
+        ],
+        "missing_values": {},
+        "numeric_stats": {
+            "PlaylistId": {
+                "min": 1.0,
+                "max": 18.0,
+                "avg": 4.92
+            },
+            "TrackId": {
+                "min": 1.0,
+                "max": 3503.0,
+                "avg": 1767.08
+            }
+        },
+        "sample_data": [
+            {
+                "PlaylistId": 1,
+                "TrackId": 3402
+            },
+            {
+                "PlaylistId": 1,
+                "TrackId": 3389
+            },
+            {
+                "PlaylistId": 1,
+                "TrackId": 3390
+            },
+            {
+                "PlaylistId": 1,
+                "TrackId": 3391
+            },
+            {
+                "PlaylistId": 1,
+                "TrackId": 3392
+            }
+        ]
+    },
+    "Track": {
+        "total_rows": 3503,
+        "total_columns": 9,
+        "columns": [
+            "TrackId",
+            "Name",
+            "AlbumId",
+            "MediaTypeId",
+            "GenreId",
+            "Composer",
+            "Milliseconds",
+            "Bytes",
+            "UnitPrice"
+        ],
+        "missing_values": {
+            "Composer": 977
+        },
+        "numeric_stats": {
+            "TrackId": {
+                "min": 1.0,
+                "max": 3503.0,
+                "avg": 1752.0
+            },
+            "AlbumId": {
+                "min": 1.0,
+                "max": 347.0,
+                "avg": 140.93
+            },
+            "MediaTypeId": {
+                "min": 1.0,
+                "max": 5.0,
+                "avg": 1.21
+            },
+            "GenreId": {
+                "min": 1.0,
+                "max": 25.0,
+                "avg": 5.73
+            },
+            "Milliseconds": {
+                "min": 1071.0,
+                "max": 5286953.0,
+                "avg": 393599.21
+            },
+            "Bytes": {
+                "min": 38747.0,
+                "max": 1059546140.0,
+                "avg": 33510207.07
+            },
+            "UnitPrice": {
+                "min": 0.99,
+                "max": 1.99,
+                "avg": 1.05
+            }
+        },
+        "sample_data": [
+            {
+                "TrackId": 1,
+                "Name": "For Those About To Rock (We Salute You)",
+                "AlbumId": 1,
+                "MediaTypeId": 1,
+                "GenreId": 1,
+                "Composer": "Angus Young, Malcolm Young, Brian Johnson",
+                "Milliseconds": 343719,
+                "Bytes": 11170334,
+                "UnitPrice": 0.99
+            },
+            {
+                "TrackId": 2,
+                "Name": "Balls to the Wall",
+                "AlbumId": 2,
+                "MediaTypeId": 2,
+                "GenreId": 1,
+                "Composer": "U. Dirkschneider, W. Hoffmann, H. Frank, P. Baltes, S. Kaufmann, G. Hoffmann",
+                "Milliseconds": 342562,
+                "Bytes": 5510424,
+                "UnitPrice": 0.99
+            },
+            {
+                "TrackId": 3,
+                "Name": "Fast As a Shark",
+                "AlbumId": 3,
+                "MediaTypeId": 2,
+                "GenreId": 1,
+                "Composer": "F. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman",
+                "Milliseconds": 230619,
+                "Bytes": 3990994,
+                "UnitPrice": 0.99
+            },
+            {
+                "TrackId": 4,
+                "Name": "Restless and Wild",
+                "AlbumId": 3,
+                "MediaTypeId": 2,
+                "GenreId": 1,
+                "Composer": "F. Baltes, R.A. Smith-Diesel, S. Kaufman, U. Dirkscneider & W. Hoffman",
+                "Milliseconds": 252051,
+                "Bytes": 4331779,
+                "UnitPrice": 0.99
+            },
+            {
+                "TrackId": 5,
+                "Name": "Princess of the Dawn",
+                "AlbumId": 3,
+                "MediaTypeId": 2,
+                "GenreId": 1,
+                "Composer": "Deaffy & R.A. Smith-Diesel",
+                "Milliseconds": 375418,
+                "Bytes": 6290521,
+                "UnitPrice": 0.99
+            }
+        ]
+    }
+}
